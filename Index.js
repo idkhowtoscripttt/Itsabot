@@ -1,3 +1,6 @@
+process.on("uncaughtException", console.error);
+process.on("unhandledRejection", console.error);
+
 const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder } = require("discord.js");
 const axios = require("axios");
 
